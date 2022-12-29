@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Dalle2Interface.iml" filepath="$PROJECT_DIR$/.idea/Dalle2Interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../OpenAIExperiments/.idea/OpenAIExperiments.iml" filepath="$PROJECT_DIR$/../OpenAIExperiments/.idea/OpenAIExperiments.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../helloworld/.idea/helloworld.iml" filepath="$PROJECT_DIR$/../helloworld/.idea/helloworld.iml" />
     </modules>
   </component>
 </project>

@@ -41,10 +41,10 @@ class GPT3(object):
             input=text,
             instruction=instruction,
             model=model)['choices'][0]['text']
-        return response
+        return response['data']['url']
 
     @staticmethod
-    def gpt_image(text, response_format="b64_json"):
+    def gpt_image(text, response_format="url"):
         response = openai.Image.create(prompt=text, n=1, size="1024x1024", response_format=response_format)
         return response
 

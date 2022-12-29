@@ -2,27 +2,21 @@ import functools
 import json
 import requests
 import streamlit as st
+import uvicorn
 
-from PIL import Image
+import os
 
 
 def generate(img_container=None):
     text = st.session_state.text_key
-    j_text = json.dumps(text)
-    requests.post(url=f"http://127.0.0.1:8000/prompts/{text}", data=j_text)
+    requests.post(url=f"http://127.0.0.1:8000/prompts/{text}")
     response = requests.get(url=f"http://127.0.0.1:8000/images/-1")
-    j_response = json.loads(response.content.decode('utf-8'))
-    img_name = j_response['image']
-    img = Image.open(f"images/{img_name}")
+    img = json.loads(response.content.decode())['image']
     st.image(img)
-    return img
 
 
 st.text_input(label="Please enter a prompt:", on_change=generate, key='text_key')
 st.button("Regenerate", on_click=generate)
 
-# if prompt:
-#     img_name = generate(text=prompt)
-#     img_name
-#     img = Image.open(f"images/{img_name}")
-#     st.image(img)
+if __name__ == "__main__":
+    uvicorn.run("app:app", host="0.0.0.0", port=8080)
