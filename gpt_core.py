@@ -1,10 +1,11 @@
 import openai
 import os
 
-OPENAI_KEY_FILE = os.path.join(
-    os.path.expanduser("."),
-    "openai_key.txt")
+# OPENAI_KEY_FILE = os.path.join(
+#     os.path.expanduser("."),
+#     "openai_key.txt")
 
+OPENAI_KEY = os.getenv("OpenAIKey")
 
 def read_file(filename):
     with open(filename, "r") as f:

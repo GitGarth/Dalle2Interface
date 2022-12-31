@@ -12,9 +12,7 @@
       <change afterPath="$PROJECT_DIR$/../OpenAIExperiments/img_generator.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../OpenAIExperiments/prompts/simulated_user.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../OpenAIExperiments/simulation_a.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gpt_core.py" beforeDir="false" afterPath="$PROJECT_DIR$/gpt_core.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../OpenAIExperiments/.idea/OpenAIExperiments.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../OpenAIExperiments/.idea/OpenAIExperiments.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../OpenAIExperiments/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../OpenAIExperiments/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../OpenAIExperiments/chatbot.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OpenAIExperiments/chatbot.py" afterDir="false" />
