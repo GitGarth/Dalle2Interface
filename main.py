@@ -2,9 +2,6 @@ import functools
 import json
 import requests
 import streamlit as st
-import uvicorn
-
-import os
 
 
 def generate(img_container=None):
@@ -17,6 +14,3 @@ def generate(img_container=None):
 
 st.text_input(label="Please enter a prompt:", on_change=generate, key='text_key')
 st.button("Regenerate", on_click=generate)
-
-if __name__ == "__main__":
-    uvicorn.run("app:app", host="0.0.0.0", port=8080)
