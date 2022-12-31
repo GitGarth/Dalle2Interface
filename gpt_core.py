@@ -14,7 +14,7 @@ def read_file(filename):
 
 
 class GPT3(object):
-    def __init__(self, key_file=OPENAI_KEY_FILE):
+    def __init__(self, key_file=OPENAI_KEY):
         self.open_ai_key = read_file(key_file)
         openai.api_key = self.open_ai_key
 
